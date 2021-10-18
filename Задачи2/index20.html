@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		
+		/* 20) Составьте программу, которая принимает с клавиатуры целое число, а затем выводит на экран последующие ему целые числа, пока сумма этих чисел не превышает квадрата введённого числа. */
+
+		var user ,summ = 0,square = 0,nextNum = 0;
+		user = +prompt('Enter number ');
+		square = user * user;
+		while (summ < square) {
+			user++;
+			summ += user;
+			nextNum = user;
+			document.writeln('Послудующее число: ' + nextNum + '<br/>');
+		}
+			document.writeln('Сумма чисел: ' + summ + '<br/>');
+	</script>
+</body>
+</html>

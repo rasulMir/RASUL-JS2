@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/* 2. Имеется фрагмент программы в виде оператора цикла с параметром, обеспечивающий вывод на экран «столбиком» всех целых чисел от 100 до 80. Оформить этот фрагмент в виде:
+		а) оператора цикла с предусловием;
+		б) оператора цикла с постусловием. */
+		var min = 80, max = 100;
+		for (; max > min; ) {
+			document.writeln(--max + '<br/>')
+		}
+		for (; max >= min;) {
+			document.writeln(max-- + '<br/>')
+		}
+	</script>
+</body>
+</html>
